@@ -22,7 +22,7 @@ COPY . .
 
 # expose port
 #EXPOSE 80
-ENV myport $PORT
+ENV myport 8080
 # start the application
 CMD [ "python", "-m" , "flask", "run"]
 
