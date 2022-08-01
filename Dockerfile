@@ -24,6 +24,6 @@ COPY . .
 #EXPOSE 80
 ENV myport $PORT
 # start the application
-CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0",  "debug=True"]
+CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0"]
 
 #"--port=$myport",
