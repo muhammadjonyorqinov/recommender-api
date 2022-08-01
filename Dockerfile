@@ -22,7 +22,7 @@ COPY . .
 
 # expose port
 #EXPOSE 80
-
+ENV myport $PORT
 # start the application
-CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0", "--port=80"]
+CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0", "--port=$myport", "debug=True"]
 
