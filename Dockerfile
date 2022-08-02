@@ -21,9 +21,9 @@ WORKDIR /app
 COPY . .
 
 # expose port
-#EXPOSE 80
-ENV myport 8080
+EXPOSE 5000
+
 # start the application
-CMD [ "python", "-m" , "flask", "run"]
+CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0"]
 
 #"--port=$myport",
